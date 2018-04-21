@@ -11,5 +11,12 @@ export class HomeComponentComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  Experience1 = {
+    name: "System On Grid",
+    date: " May 17 - Present",
+    pos: "Software Developer Intern",
+    descs: ["Created an internal customer support application with Django and Python", "Converted Angular pages to static pages for better web crawling", "Created guides on all the company's features for better customer support"],
+    skills: ["HTML/CSS", "JQuery", "Python", "Django", "AngularJS"],
+    tools: ["Git", "Visual Code"]
+  }
 }

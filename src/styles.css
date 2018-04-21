@@ -9,3 +9,7 @@ body {
 .right {
     float: right;
 }
+
+.no-bullet {
+    list-style: none;
+}
