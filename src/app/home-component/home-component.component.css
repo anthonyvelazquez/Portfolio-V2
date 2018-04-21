@@ -1,0 +1,70 @@
+.main-section {
+    padding: 90px 20px;
+}
+
+.about {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.about ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about hr {
+    border: 0;
+    border-top: 1px solid #666;
+    width: 50%;
+    margin-right: 100%;
+}
+
+.github {
+    background: #303030;
+    background-size: cover;
+    padding: 1px 0 3px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.github:hover {
+    background: #5a0570;
+}
+
+.github a {
+    outline: 0px !important;
+    color: white;
+    text-decoration: none;
+    font-size: 4.5em;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.github:hover a {
+    outline: 0px !important;
+    text-decoration: none;
+    font-size: 5.5em;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.experience {
+    color: black;
+}
+
+.experience h1 {
+    text-align: center;
+}
+
+.experience .college {
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
