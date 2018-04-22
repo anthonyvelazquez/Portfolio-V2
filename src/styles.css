@@ -13,3 +13,13 @@ body {
 .no-bullet {
     list-style: none;
 }
+
+.fade-line {
+    z-index: -1;
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#777), to(#eee));
+}

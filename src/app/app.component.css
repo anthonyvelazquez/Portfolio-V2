@@ -1,3 +1,28 @@
+.banner {
+    background-image: url("https://pixabay.com/get/eb31b4082ef5033ed1534705fb0938c9bd22ffd41cb3154291f3c77ba0/city-2457612_1920.jpg");
+}
+
+.headshot {
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.headshot img {
+    border-radius: 5px;
+    width: 200px;
+    /* height: 250px; */
+}
+
+.banner hr {
+    width: 30%;
+}
+
+.name {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
 .main-nav-container {
     position: relative;
     top: 0px;

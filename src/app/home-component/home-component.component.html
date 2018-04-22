@@ -1,8 +1,8 @@
 <section class="main-section about charcoal">
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
-                    I'm a software engineer at Apogee Interactive in Atlanta, building web applications for the energy industry. In my spare time I work on a few apps and websites. I maintain a comprehensive background in marketing and graphic design channeled into diverse types of work and successful projects. I strive to keep my development skills up to date across a full stack of new and emergent technologies.
+            <div class="col-md-9 offset-md-1" style="text-align: center">
+                   <p>{{About}}</p>
             </div>
             <div class="col-md-2 right">
                 <hr>
@@ -23,8 +23,29 @@
     </div>
 </section>
 <section class="main-section portfolio charcoal">
-    <div class="container">
+    <div class="">
         <h1>Projects</h1>
+        <div class="portfolio-filter container">
+            <ul class="portfolio-nav">
+                <li>
+                    <a href="#" data-filter=".app" class="option apps border-left border-right">All</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a href="#" data-filter=".app" class="option apps border-left border-right">Applications</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".app" class="option apps border-left border-right">Web Development</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a href="#" data-filter=".app" class="option apps border-left border-right">Applications</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="portfolio-container">
+            ss
+        </ul>
     </div>
 </section>
 <section class="github">
@@ -88,11 +109,11 @@
     <div class="container">
         <h1>Skills</h1>
         <div class="row">
-            sdsd
+            <span class="skillcard language" *ngFor="let skill of OverallSkills">{{skill}}</span>
         </div>
     </div>
 </section>
-<div class="fade-bg">
+<div class="fade-bg charcoal">
     <div class="container">
         <section class="main-section contact">
             <h1>Have Any Questions?</h1>
@@ -111,9 +132,41 @@
                             <h3><i class="fas fa-at"></i> Email: </h3>
                             <span><a href="mailto:anthonyhvelazquez@gmail.com">anthonyhvelazquez@gmail.com</a></span>
                         </div>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.linkedin.com/in/anthonyhvelazquez/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                    <a href="http://github.com/anthonyvelazquez"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- <div class="sent_message">Your message has been sent.</div> -->
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" placeholder="Message" rows="5"></textarea>
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div style="text-align: left">
+                            <button type="submit" class="btn contact-button">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </div>
 </div>
+<footer>
+
+</footer>
