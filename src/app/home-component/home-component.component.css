@@ -116,6 +116,40 @@
     box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.5);
 }
 
+.portfolio-container li {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.project-block {
+    text-align: center;
+    position: relative;
+}
+
+.project-block .title {
+    font-size: 36px;
+    color: #eee;
+    top: 10%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.project-block img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transform: scale(1);
+    transition: all 1s;
+}
+
 .github {
     background: #303030;
     background-size: cover;
@@ -174,20 +208,6 @@
 .timeline li {
     margin: 5px;
     color: #000 !important;
-}
-
-.circle {
-    position: relative;
-    display: inline;
-    left: -.5%;
-    top: -3%;
-    border: 4px solid #505050;
-    border-radius: 2px;
-    background: white;
-    transition: all .2s ease-in-out;
-    transform: scale(.7);
-    z-index: 100;
-    max-width: 100%;
 }
 
 .work {
@@ -255,7 +275,7 @@
     border-top: solid 1px #aaa;
 }
 
-.title {
+.flag-wrapper .title {
     right: 5px;
     border-right: solid 1px #aaa;
 }
@@ -311,7 +331,21 @@
     text-align: center;
 }
 
-.skills .skillcard {
+.skills .skill-card {
+    margin: 10px 10px;
+    white-space: nowrap;
+    background: #aaa;
+    color: black;
+    padding: 10px 7px;
+    border-radius: 10px;
+    background: #aaa;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    border: 1px solid #222;
+}
+
+.skill-card .skillcard {
     margin: 10px 10px;
     white-space: nowrap;
     background: #aaa;
@@ -323,7 +357,16 @@
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     border: 1px solid #222;
-    font-size: 2em;
+}
+
+.skill-card .language {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background: #777;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .skills .language {
