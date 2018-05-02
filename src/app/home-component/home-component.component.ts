@@ -8,12 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponentComponent implements OnInit {
 
   constructor() { }
+  Projects = []
 
   ngOnInit() {
+    this.Projects.push({
+      title1: "GroupMe",
+      title2: "Downloader",
+      link: "https://groupme-downloader-av.netlify.com/",
+      image: "../../assets/GroupMe.jpg"
+    })
   }
+
   Experience1 = {
     name: "System On Grid",
-    date: " May 17 - Present",
+    date: " May 2017 - May 2018",
     pos: "Software Developer Intern",
     descs: ["Created an internal customer support application with Django and Python", "Converted Angular pages to static pages for better web crawling", "Created guides on all the company's features for better customer support"],
     skills: ["HTML/CSS", "JQuery", "Python", "Django", "AngularJS"],
@@ -23,4 +31,5 @@ export class HomeComponentComponent implements OnInit {
   WebSkills = ["AngularJS", "HTML/CSS", "SASS", "Javascript", "JQuery", "Angular5", "React"];
   OtherSkills = ["C++", "Python", "SFML", "C#", "Allegro", "DirectX", "3D Modeling"];
   ToolEtc = ["Git", "Visual Studio", "Unity", "Unreal Engine", "Blender"]
+
 }
