@@ -28,24 +28,24 @@
         <div class="portfolio-filter container">
             <ul class="portfolio-nav">
                 <li>
-                    <a data-filter=".app" class="option apps border-left border-right">All</a>
-                </li>
-                <!-- <span>|</span>
-                <li>
-                    <a href="#" data-filter=".app" class="option apps border-left border-right">Applications</a>
-                </li>
-                <li>
-                    <a href="#" data-filter=".app" class="option apps border-left border-right">Web Development</a>
+                    <a class="option apps border-left border-right" (click)="SetDisplay(1)">All</a>
                 </li>
                 <span>|</span>
                 <li>
-                    <a href="#" data-filter=".app" class="option apps border-left border-right">Applications</a>
-                </li> -->
+                    <a class="option apps border-left border-right" (click)="SetDisplay(2)">Web Applications</a>
+                </li>
+                <li>
+                    <a class="option apps border-left border-right" (click)="SetDisplay(3)">Desktop Applications</a>
+                </li>
+                <span>|</span>
+                <li>
+                    <a class="option apps border-left border-right" (click)="SetDisplay(4)">Other</a>
+                </li>
             </ul>
         </div>
         <ul class="portfolio-container">
             <li class="project-block" *ngFor="let project of Projects">
-                <a href="{{project.link}}" target="_blank" style="width: 100%;">
+                <a href="{{project.link}}" target="_blank" style="width: 100%;" *ngIf="project.type == CurrentProjectDisplay || CurrentProjectDisplay == 1">
                     <h2 class="title">{{project.title1}}<br>{{project.title2}}</h2>
                     <img src="{{project.image}}" alt="" class="project-img">
                 </a>

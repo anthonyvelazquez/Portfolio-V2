@@ -9,19 +9,36 @@ export class HomeComponentComponent implements OnInit {
 
   constructor() { }
   Projects = []
+  //1: All, 2: Web Apps, 3: Desktop Apps, 4: 3D Models
+  CurrentProjectDisplay = 1;
 
   ngOnInit() {
     this.Projects.push({
+      type: 2,
       title1: "GroupMe",
       title2: "Downloader",
       link: "https://groupme-downloader-av.netlify.com/",
       image: "../../assets/GroupMe.jpg"
     })
+    this.Projects.push({
+      type: 2,
+      title1: "DJ Rooms",
+      title2: "",
+      link: "https://github.com/anthonyvelazquez/Dj-Rooms",
+      image: "../../assets/DJRooms.jpg"
+    })
+    this.Projects.push({
+      type: 3,
+      title1: "SmartHub",
+      title2: "",
+      link: "https://github.com/anthonyvelazquez/SmartHub",
+      image: "../../assets/SmartHub.jpg"
+    })
   }
 
   Experience1 = {
     name: "System On Grid",
-    date: " May 2017 - May 2018",
+    date: " April 2016 - May 2018",
     pos: "Software Developer Intern",
     descs: ["Created an internal customer support application with Django and Python", "Converted Angular pages to static pages for better web crawling", "Created guides on all the company's features for better customer support"],
     skills: ["HTML/CSS", "JQuery", "Python", "Django", "AngularJS"],
@@ -31,5 +48,9 @@ export class HomeComponentComponent implements OnInit {
   WebSkills = ["AngularJS", "HTML/CSS", "SASS", "Javascript", "JQuery", "Angular5", "React"];
   OtherSkills = ["C++", "Python", "SFML", "C#", "Allegro", "DirectX", "3D Modeling"];
   ToolEtc = ["Git", "Visual Studio", "Unity", "Unreal Engine", "Blender"]
+
+  SetDisplay(type) {
+    this.CurrentProjectDisplay = type;
+  }
 
 }
