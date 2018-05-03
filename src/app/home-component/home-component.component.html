@@ -47,7 +47,8 @@
             <li class="project-block" *ngFor="let project of Projects">
                 <a href="{{project.link}}" target="_blank" style="width: 100%;" *ngIf="project.type == CurrentProjectDisplay || CurrentProjectDisplay == 1">
                     <h2 class="title">{{project.title1}}<br>{{project.title2}}</h2>
-                    <img src="{{project.image}}" alt="" class="project-img">
+                    <div class="description"><p>{{project.desc}}</p></div>
+                    <!-- <img src="{{project.image}}" alt="" class="project-img"> -->
                 </a>
             </li>
         </ul>

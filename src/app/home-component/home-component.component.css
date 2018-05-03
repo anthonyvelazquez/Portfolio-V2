@@ -131,7 +131,7 @@
 
 .project-block .title {
     font-size: 36px;
-    color: black;
+    color: white;
     top: 10%;
     position: absolute;
     margin-left: auto;
@@ -139,6 +139,20 @@
     left: 0;
     right: 0;
     z-index: 10;
+}
+
+.project-block .description {
+    display: block;
+    width: 400px;
+    height: 270px;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 5px 5px;
+}
+
+.project-block p {
+    padding: 120px 15px 15px 15px;
+    color: white;
+    text-align: left;
 }
 
 .project-block img {

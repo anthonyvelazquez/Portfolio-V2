@@ -18,21 +18,24 @@ export class HomeComponentComponent implements OnInit {
       title1: "GroupMe",
       title2: "Downloader",
       link: "https://groupme-downloader-av.netlify.com/",
-      image: "../../assets/GroupMe.jpg"
+      image: "../../assets/GroupMe.jpg",
+      desc: "GroupMe Downloader is an Angular web application that allows you to view images from your GroupMe groups and download them as long as you provide your GroupMe Access Token."
     })
     this.Projects.push({
       type: 2,
       title1: "DJ Rooms",
       title2: "",
       link: "https://github.com/anthonyvelazquez/Dj-Rooms",
-      image: "../../assets/DJRooms.jpg"
+      image: "../../assets/DJRooms.jpg",
+      desc: "DJ Rooms is an Angular web app that allows you to create a Spotify device or (DJ Room) with a key you specify and it will begin playing music that you add to a playlist. People can then use the key to listen from their devices."
     })
     this.Projects.push({
       type: 3,
       title1: "SmartHub",
       title2: "",
       link: "https://github.com/anthonyvelazquez/SmartHub",
-      image: "../../assets/SmartHub.jpg"
+      image: "../../assets/SmartHub.jpg",
+      desc: "SmartHub is a Django web app that is meant to be used on a Raspberry Pi. I developed the application and build a Smart Mirror with this web app to be able to tell the time, listen to voice commands, and set alarms and reminders."
     })
   }
 

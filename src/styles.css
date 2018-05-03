@@ -23,3 +23,7 @@ body {
     background: black;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#777), to(#eee));
 }
+
+a {
+    text-decoration: none;
+}
