@@ -37,6 +37,14 @@ export class HomeComponentComponent implements OnInit {
       image: "../../assets/SmartHub.jpg",
       desc: "SmartHub is a Django web app that is meant to be used on a Raspberry Pi. I developed the application and build a Smart Mirror with this web app to be able to tell the time, listen to voice commands, and set alarms and reminders."
     })
+    this.Projects.push({
+      type: 2,
+      title1: "Melanie Mena",
+      title2: "Portfolio",
+      link: "https://mena.netlify.com/",
+      image: "../../assets/DJRooms.jpg",
+      desc: "Very basic portfolio page that was requested by a friend to be done in only HTML and CSS with no Javascript."
+    })
   }
 
   Experience1 = {
