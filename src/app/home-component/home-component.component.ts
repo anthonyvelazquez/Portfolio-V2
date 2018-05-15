@@ -45,6 +45,30 @@ export class HomeComponentComponent implements OnInit {
       image: "../../assets/DJRooms.jpg",
       desc: "Very basic portfolio page that was requested by a friend to be done in only HTML and CSS with no Javascript."
     })
+    this.Projects.push({
+      type: 2,
+      title1: "Life Assistant",
+      title2: "Angular App",
+      link: "https://github.com/anthonyvelazquez/lifeassistant",
+      image: "../../assets/DJRooms.jpg",
+      desc: "(WIP) - Web app that allows you to control many aspects of life like; finances, social media, events, etc..."
+    })
+    this.Projects.push({
+      type: 2,
+      title1: "Life Assistant",
+      title2: "Django Server",
+      link: "https://github.com/anthonyvelazquez/lifeassistant-server",
+      image: "../../assets/DJRooms.jpg",
+      desc: "(New/WIP) - Django Server for LifeAssistant Application. Has events and full account creation implemented with reddit api as well."
+    })
+    this.Projects.push({
+      type: 2,
+      title1: "Life Assistant",
+      title2: "Node Server",
+      link: "https://github.com/anthonyvelazquez/lifeassistant-server",
+      image: "../../assets/DJRooms.jpg",
+      desc: "(Old) - Basic Node Server for LifeAssistant Application. Has Events and basic account creation implemented. Stopped development and switched to Django Server."
+    })
   }
 
   Experience1 = {
