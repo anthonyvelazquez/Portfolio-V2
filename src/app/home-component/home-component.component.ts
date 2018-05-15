@@ -57,7 +57,7 @@ export class HomeComponentComponent implements OnInit {
       type: 2,
       title1: "Life Assistant",
       title2: "Django Server",
-      link: "https://github.com/anthonyvelazquez/lifeassistant-server",
+      link: "https://github.com/anthonyvelazquez/lifeassistant-server-django",
       image: "../../assets/DJRooms.jpg",
       desc: "(New/WIP) - Django Server for LifeAssistant Application. Has events and full account creation implemented with reddit api as well."
     })
@@ -68,6 +68,14 @@ export class HomeComponentComponent implements OnInit {
       link: "https://github.com/anthonyvelazquez/lifeassistant-server",
       image: "../../assets/DJRooms.jpg",
       desc: "(Old) - Basic Node Server for LifeAssistant Application. Has Events and basic account creation implemented. Stopped development and switched to Django Server."
+    })
+    this.Projects.push({
+      type: 2,
+      title1: "Web Helper",
+      title2: "Django Server",
+      link: "https://github.com/anthonyvelazquez/helper_server",
+      image: "../../assets/DJRooms.jpg",
+      desc: "Django Server with functionality and helpers for all my projects"
     })
   }
 
